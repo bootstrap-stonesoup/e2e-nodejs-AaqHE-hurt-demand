@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-health-check-sfud
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/bootstrap/rhtap-demo-gymn-tenant/e2e-nodejs/nodejs-health-check-sfud@sha256:3e4e8ce148a883a5e1e43c9559575fa0822cfb2ff85ec594ab74a6f4263d8749
         name: my-nodejs
         ports:
         - containerPort: 3001
