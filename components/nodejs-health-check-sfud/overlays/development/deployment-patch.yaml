@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-sfud
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/bootstrap/rhtap-demo-gymn-tenant/e2e-nodejs/nodejs-health-check-sfud@sha256:3e4e8ce148a883a5e1e43c9559575fa0822cfb2ff85ec594ab74a6f4263d8749
+        name: my-nodejs
+        resources: {}
+status: {}
